@@ -1,1 +1,21 @@
+// The program input for aleo_card/src/main.leo
+[generate_card]
+owner: address = aleo1w9t30exc3zaj2ef99qqkwgnve36v9vxyxe2erlugvsf3y299esgqeceeea;
+number: u64 = 1234567890u64;
+cvv: u8 = 123u8;
+amt: u64 = 0u64;
 
+[get_faucet]
+owner: address = aleo1w9t30exc3zaj2ef99qqkwgnve36v9vxyxe2erlugvsf3y299esgqeceeea;
+number: u64 = 1234567890u64;
+cvv: u8 = 123u8;
+amt: u64 = 100u64;
+
+[get_asset]
+asset : card = card {
+    owner: aleo1w9t30exc3zaj2ef99qqkwgnve36v9vxyxe2erlugvsf3y299esgqeceeea,
+    number:  1234567890u64,
+    cvv: 123u8,
+    amt: 100u64,
+    _nonce: 0group,
+}; 
